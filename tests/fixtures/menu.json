@@ -1,0 +1,36 @@
+[
+  {
+    "id": 20,
+    "name": "Сухие строительные смеси и грунтовки",
+    "slug": "stroitelnye_smesi",
+    "absolute_url": "/catalog/stroitelnye_smesi/",
+    "submenu": [
+      {
+        "id": 28,
+        "name": "Штукатурка",
+        "slug": "shtukaturka",
+        "absolute_url": "/catalog/stroitelnye_smesi/shtukaturka/",
+        "submenu": [
+          {
+            "id": 171,
+            "name": "Сухая штукатурка",
+            "slug": "suhaya_shtukaturka",
+            "absolute_url": "/catalog/stroitelnye_smesi/shtukaturka/suhaya_shtukaturka/"
+          },
+          {
+            "id": 172,
+            "name": "Декоративная штукатурка",
+            "slug": "shtukaturka_dekorativnaja",
+            "absolute_url": "/catalog/stroitelnye_smesi/shtukaturka/shtukaturka_dekorativnaja/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 958,
+    "name": "Вентиляция",
+    "slug": "ventilaciya",
+    "absolute_url": "/catalog/ventilaciya/"
+  }
+]

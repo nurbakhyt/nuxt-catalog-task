@@ -1,0 +1,2 @@
+/api/* https://gdematerial.ru/api/:splat 200
+/*    /200.html   200

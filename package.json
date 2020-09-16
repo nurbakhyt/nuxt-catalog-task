@@ -1,0 +1,82 @@
+{
+  "name": "bn2-frontend",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "author": "Fedor Borshev <f@f213.in>",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nuxt",
+    "build": "cross-env NODE_ENV=production nuxt build",
+    "start": "cross-env NODE_ENV=production nuxt start",
+    "generate": "cross-env NODE_ENV=development nuxt generate",
+    "lint": "cross-env NODE_OPTIONS=--max-old-space-size=6144 eslint --ext .js,.vue --ignore-path .gitignore . && stylelint **/*.vue **/*.scss --syntax scss",
+    "test": "NODE_OPTIONS=--max-old-space-size=6144 jest"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "vue"
+    ],
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
+    },
+    "transformIgnorePatterns": [
+      "/node_modules/(?!vue-awesome|vuejs-datepicker).+(js)$"
+    ],
+    "moduleNameMapper": {
+      "^~/(.*)$": "<rootDir>/$1"
+    },
+    "setupFiles": [
+      "<rootDir>/tests/setup.js",
+      "<rootDir>/node_modules/regenerator-runtime/runtime"
+    ]
+  },
+  "dependencies": {
+    "@mapbox/stylelint-processor-arbitrary-tags": "^0.2.0",
+    "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/device": "^1.2.7",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "babel-eslint": "^10.0.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "cross-env": "^5.2.0",
+    "css-mqpacker": "7",
+    "glob-all": "^3.1.0",
+    "lazysizes": "^5.2.0",
+    "node-sass": "^4.12.0",
+    "nuxt": "2.11.0",
+    "postcss-colormin": "^2.2.2",
+    "postcss-nesting": "^4.2.1",
+    "postcss-pxtorem": "^4.0.1",
+    "purgecss-webpack-plugin": "^1.2.0",
+    "require-dir": "^1.2.0",
+    "sass-lint-vue": "0.3.3",
+    "sass-loader": "^7.1.0",
+    "stylelint": "^9.2.1",
+    "stylelint-config-recommended-scss": "^3.2.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-order": "^0.8.1",
+    "stylelint-scss": "^3.1.0",
+    "stylelint-webpack-plugin": "^2.0.0",
+    "vue-awesome": "2"
+  },
+  "devDependencies": {
+    "@lhci/cli": "^0.3.12",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "babel-jest": "^23.2.0",
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-import-resolver-webpack": "^0.11.1",
+    "eslint-loader": "^3.0.0",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.17.0",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-vue": "^5.2.3",
+    "jest": "^23.3.0",
+    "vue-jest": "^1.4.0"
+  }
+}

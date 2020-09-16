@@ -1,0 +1,4 @@
+# To edit production robots.txt file, use robots.production.txt
+
+User-agent: *
+Disallow:

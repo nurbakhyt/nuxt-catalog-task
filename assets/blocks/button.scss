@@ -1,0 +1,233 @@
+.button {
+  display: inline-block;
+  padding: 16px 28px;
+  margin: 0;
+  font-family: $font-family;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.01rem;
+  color: $white;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: $primary-color;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: 0;
+  transition: all 0.3s ease-out 0s;
+  appearance: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+
+  &:hover {
+    color: $white;
+    text-decoration: none;
+    background-color: $primary-gray;
+    transition: all 0.1s ease-in 0s;
+  }
+
+  &:active {
+    color: $white;
+    text-decoration: none;
+    background-color: darken($primary-gray, 5);
+    transition: all 0.1s ease-in 0s;
+  }
+
+  &--disabled,
+  &:disabled {
+    color: $gray-semidark;
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color: $gray-lighten;
+    border-color: transparent;
+  }
+
+  &--montserrat {
+    font-family: $font-family-montserrat;
+  }
+
+  &--full {
+    width: 100%;
+  }
+
+  &--full-height {
+    height: 100%;
+  }
+
+  &--bold {
+    padding: 1rem;
+    border-width: 6px;
+  }
+
+  &--small {
+    font-size: 13px;
+  }
+
+  &--borderless {
+    font-weight: 700;
+    border: none;
+  }
+
+  &--secondary {
+    color: $primary-color;
+    background-color: $white;
+    border-color: $primary-color;
+
+    &:hover {
+      color: $white;
+      background-color: $primary-gray;
+      border-color: $primary-gray;
+    }
+
+    &:active {
+      color: $white;
+      background-color: darken($primary-gray, 5);
+      border-color: darken($primary-gray, 5);
+    }
+  }
+
+  &--positive {
+    font-weight: 700;
+    color: hsl(180, 100%, 23%);
+    background-color: $positive;
+    border-color: $positive;
+
+    &:hover {
+      color: darken(hsl(180, 100%, 23%), 5%);
+      background-color: darken($positive, 5%);
+    }
+
+    &:active {
+      color: darken(hsl(180, 100%, 23%), 10%);
+      background-color: darken($positive, 10%);
+    }
+  }
+
+  &--inverse {
+    color: $white;
+    background-color: $primary-gray;
+
+    &:hover {
+      color: $white;
+      background-color: darken($primary-gray, 5%);
+    }
+
+    &:active {
+      background-color: darken($primary-gray, 10%);
+    }
+  }
+
+  &--greyscale {
+    color: hsl(198, 23%, 19%);
+    background-color: hsl(215, 38%, 94%);
+    border-color: hsl(215, 38%, 94%);
+
+    &:hover {
+      color: darken(hsl(198, 23%, 19%), 5%);
+      background-color: darken(hsl(215, 38%, 94%), 5%);
+      border-color: darken(hsl(215, 38%, 94%), 5%);
+    }
+
+    &:active {
+      color: darken(hsl(198, 23%, 19%), 10%);
+      background-color: darken(hsl(215, 38%, 94%), 10%);
+      border-color: darken(hsl(215, 38%, 94%), 10%);
+    }
+  }
+
+  &--gray {
+    color: hsl(230, 78%, 51%);
+    background-color: hsl(212, 35%, 93%);
+    border-color: hsl(212, 35%, 93%);
+
+    &:hover {
+      color: darken(hsl(230, 78%, 51%), 5%);
+      background-color: darken(hsl(212, 35%, 93%), 5%);
+      border-color: darken(hsl(212, 35%, 93%), 5%);
+    }
+
+    &:active {
+      color: darken(hsl(230, 78%, 51%), 10%);
+      background-color: darken(hsl(212, 35%, 93%), 10%);
+      border-color: darken(hsl(212, 35%, 93%), 10%);
+    }
+  }
+
+  &--promo {
+    color: hsl(36, 18%, 35%);
+    background-color: hsl(64, 57%, 91%);
+    border-color: currentColor;
+
+    &:hover {
+      color: darken(hsl(36, 18%, 35%), 5%);
+      background-color: darken(hsl(64, 57%, 91%), 5%);
+    }
+
+    &:active {
+      color: darken(hsl(36, 18%, 35%), 10%);
+      background-color: darken(hsl(64, 57%, 91%), 10%);
+    }
+  }
+
+  &--link {
+    color: $primary-color;
+    background-color: $white;
+
+    &:hover {
+      color: $primary-gray;
+      background-color: transparent;
+    }
+
+    &:active {
+      color: $primary-gray;
+      background-color: transparent;
+    }
+  }
+
+  &--pure {
+    color: $gray-darken;
+    background-color: $white;
+    border-color: $gray-lighten;
+
+    &:hover {
+      color: $gray-darken;
+      background-color: $gray-lighten;
+    }
+
+    &:active {
+      color: $gray-darken;
+      background-color: $gray-lighten;
+    }
+  }
+
+  &--reached {
+    color: $white;
+    background-color: $atlantis;
+    border-color: $atlantis;
+
+    &:hover {
+      color: $white;
+      background-color: $atlantis;
+    }
+  }
+
+  &--green {
+    color: $white;
+    background-color: hsl(83, 50%, 50%);
+    border-color: hsl(83, 50%, 50%);
+
+    &:hover {
+      color: $white;
+      background-color: darken(hsl(83, 50%, 50%), 5%);
+      border-color: darken(hsl(83, 50%, 50%), 5%);
+    }
+
+    &:active {
+      color: $white;
+      background-color: darken(hsl(83, 50%, 50%), 10%);
+      border-color: darken(hsl(83, 50%, 50%), 10%);
+    }
+  }
+}

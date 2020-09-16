@@ -1,0 +1,97 @@
+.hide {
+  &--mobile {
+    display: none;
+
+    @media (min-width: $screen-lg) {
+      display: unset;
+    }
+  }
+
+  &--desktop {
+    display: unset;
+
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
+  }
+
+  &-xs-down {
+    display: none !important;
+
+    @media (min-width: $screen-sm) {
+      display: unset !important;
+    }
+  }
+
+  &-sm-down {
+    display: none !important;
+
+    @media (min-width: $screen-md) {
+      display: unset !important;
+    }
+  }
+
+  &-md-down {
+    display: none !important;
+
+    @media (min-width: $screen-lg) {
+      display: unset !important;
+    }
+  }
+
+  &-lg-down {
+    display: none !important;
+
+    @media (min-width: $screen-xl) {
+      display: unset !important;
+    }
+  }
+
+  &-xl-down {
+    display: none !important;
+
+    @media (min-width: $screen-xxl) {
+      display: unset !important;
+    }
+  }
+
+  &-xs-up {
+    display: unset !important;
+
+    @media (min-width: $screen-sm) {
+      display: none !important;
+    }
+  }
+
+  &-sm-up {
+    display: unset !important;
+
+    @media (min-width: $screen-md) {
+      display: none !important;
+    }
+  }
+
+  &-md-up {
+    display: unset !important;
+
+    @media (min-width: $screen-lg) {
+      display: none !important;
+    }
+  }
+
+  &-lg-up {
+    display: unset !important;
+
+    @media (min-width: $screen-xl) {
+      display: none !important;
+    }
+  }
+
+  &-xl-up {
+    display: unset !important;
+
+    @media (min-width: $screen-xxl) {
+      display: none !important;
+    }
+  }
+}

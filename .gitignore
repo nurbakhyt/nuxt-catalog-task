@@ -1,0 +1,21 @@
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+yarn-error.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
+
+# IDEA
+.idea
+
+/webpack.config.js
+.vscode
+.DS_Store
+.lighthouseci
+sw.*

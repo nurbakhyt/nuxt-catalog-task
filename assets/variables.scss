@@ -1,0 +1,95 @@
+$font-size--root:                              16px !default;
+$font-family:                                  'IBM Plex Sans', Arial, sans-serif;
+$font-family-montserrat:                       'Montserrat', Arial, sans-serif;
+
+//z-indexes
+$z-index--backlayer:                           -1;
+$z-index--default:                             auto;
+$z-index:                                      1;
+$z-index--dropdown:                            2;
+$z-index--sticky:                              3;
+$z-index--overlay:                             4;
+$z-index--modal:                               5;
+
+//grid
+$grid-columns:                                 12;
+$grid-gutter-width:                            30px !default;
+$gap:                                          16px;
+
+// screens
+$screen-xs:                                    0;
+$screen-sm:                                    480px;
+$screen-md:                                    768px;
+$screen-lg:                                    992px;
+$screen-xl:                                    1280px;
+$screen-xxl:                                   1800px;
+
+// containers
+$container-sm:                                 100%;
+$container-md:                                 100%;
+$container-lg:                                 1024px;
+$container-xl:                                 1280px;
+$container-xxl:                                1440px;
+
+//colors
+$alpha:                                        0.5;
+
+$black:                                        hsl(0, 0%, 0%);
+$gray-darker:                                  hsl(0, 0%, 20%);
+$gray-darken:                                  hsl(0, 0%, 26%);
+$gray-semidark:                                hsl(0, 0%, 51%);
+$gray-dark:                                    hsl(0, 0%, 60%);
+$gray-middle:                                  hsl(0, 0%, 75%);
+$gray:                                         hsl(0, 0%, 80%);
+$gray-light:                                   hsl(0, 0%, 83%);
+$gray-lighten:                                 hsl(0, 0%, 89%);
+$gray-lighter:                                 hsl(0, 0%, 95%);
+$gray-lightest:                                hsl(0, 0%, 97%);
+$white:                                        hsl(0, 0%, 100%);
+$red:                                          hsl(0, 100%, 50%);
+$brown:                                        hsl(36, 100%, 34%);
+
+$info:                                         hsl(202, 93%, 52%);
+$success:                                      hsl(180, 60%, 50%);
+$warning:                                      hsl(33, 100%, 68%);
+$error:                                        hsl(0, 99%, 65%);
+$navy:                                         hsl(206, 55%, 45%);
+$positive:                                     hsl(166, 94%, 50%);
+$fresh:                                        hsl(121, 96%, 90%);
+$discount:                                     hsl(340, 82%, 52%);
+$goldenrod:                                    hsl(36, 100%, 34%);
+$star:                                         hsl(49, 100%, 50%);
+$warm:                                         hsl(43, 100%, 72%);
+$golden:                                       hsl(50, 100%, 72%);
+$atlantis:                                     hsl(80, 55%, 52%);
+$aqua:                                         hsl(210, 43%, 97%);
+
+// primary colors
+$primary-black:                                hsl(198, 23%, 19%);
+
+$primary-gray:                                 $primary-black;
+
+$primary-color--darken:                        hsl(230, 90%, 31%);
+$primary-color--dark:                          hsl(230, 90%, 41%);
+$primary-color:                                hsl(230, 78%, 51%);
+$primary-color--light:                         hsl(230, 90%, 61%);
+$primary-color--lighten:                       hsl(230, 90%, 71%);
+
+// objects colors
+$text-color:                                   $primary-gray;
+
+$link-color:                                   $primary-gray;
+$link-color--hover:                            $primary-color--dark;
+$link-color--active:                           $primary-color--darken;
+$link-color--special:                          $primary-color;
+
+$link-color-inverse:                           $gray-dark;
+$link-color-inverse--hover:                    hsl(0, 0%, 74%);
+$link-color-inverse--active:                   hslac($white, $alpha);
+
+// transitions
+$ease-main:                                    0.1s ease;
+
+// shadows
+$card-shadow:                                  0 0 5px hsla(0, 0%, 0%, 0.06);
+$card-shadow--hover:                           0 2px 19px hsla(0, 0%, 0%, 0.16);

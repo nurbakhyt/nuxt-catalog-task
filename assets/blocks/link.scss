@@ -1,0 +1,82 @@
+a,
+.link {
+  padding: 0;
+  font-family: $font-family;
+  color: $primary-gray;
+  fill: $primary-gray;
+  text-decoration: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+
+  &:hover {
+    color: $link-color--hover;
+    fill: $link-color--hover;
+  }
+
+  &:active {
+    color: $link-color--active;
+    fill: $link-color--active;
+  }
+
+  &--primary {
+    color: $primary-color;
+
+    &:hover {
+      color: $primary-color--dark;
+    }
+
+    &:active {
+      color: $primary-color--darken;
+    }
+  }
+
+  &--inverse {
+    color: $link-color-inverse;
+
+    &:hover {
+      color: $link-color-inverse--hover;
+      fill: $link-color-inverse--hover;
+    }
+
+    &:active {
+      color: $link-color-inverse--active;
+      fill: $link-color-inverse--active;
+    }
+  }
+
+  &--special {
+    color: $primary-black;
+    text-decoration: underline;
+
+    &:hover {
+      color: $primary-color--dark;
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: $primary-color--darken;
+      text-decoration: underline;
+    }
+  }
+
+  &--pseudo {
+    color: $primary-black;
+    text-decoration: none;
+    border-bottom: currentColor 1px dotted;
+
+    &:hover {
+      color: $primary-color--dark;
+    }
+
+    &:active {
+      color: $primary-color--darken;
+    }
+  }
+
+  &.nuxt-link-exact-active {
+    font-weight: 800;
+    pointer-events: none;
+  }
+}
