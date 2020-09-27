@@ -55,7 +55,9 @@
           </client-only>
         </nuxt-link>
       </div>
-      <div class="header__wrapper header__wrapper--menu" />
+      <div class="header__wrapper header__wrapper--menu catalog">
+        <AppHeaderMenu />
+      </div>
     </div>
   </div>
 </template>
@@ -65,6 +67,7 @@ import AppHeaderLogo from '~/components/AppHeader/AppHeaderLogo.vue';
 import ExternalLink from '~/components/ExternalLink.vue';
 import AppSearch from '~/components/AppSearch/AppSearch.vue';
 import AppHeaderCatalogBtn from '~/components/AppHeader/buttons/AppHeaderCatalogBtn.vue';
+import AppHeaderMenu from './AppHeaderMenu.vue';
 
 export default {
   components: {
@@ -72,6 +75,7 @@ export default {
     ExternalLink,
     AppSearch,
     AppHeaderCatalogBtn,
+    AppHeaderMenu,
   },
   data() {
     return {
@@ -89,6 +93,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.catalog {
+  position: relative;
+}
+
 .header {
   &__container {
     max-width: $container-xl;

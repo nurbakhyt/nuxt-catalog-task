@@ -1,5 +1,5 @@
 <template>
-  <a class="header-catalog-btn button button--secondary" href="/catalog/">
+  <a class="header-catalog-btn button button--secondary" href="/catalog/" @click.prevent="toggle">
     <Icon class="header-catalog-btn__icon header-catalog-btn__icon--catalog" name="gm-catalog" />
     <span class="header-catalog-btn__label">Каталог</span>
     <Icon class="header-catalog-btn__icon header-catalog-btn__icon--angle-top" name="gm-angle-top" />
@@ -7,7 +7,10 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+
 export default {
+  methods: mapActions('the_menu', ['toggle']),
 };
 </script>
 
